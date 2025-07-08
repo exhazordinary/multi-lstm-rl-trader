@@ -1,22 +1,61 @@
-# Ignore all files and folders in the root directory
+# Ignore everything
 /*
 
-# But do not ignore these folders (whitelist them)
-!data/
-!models/
-!ppo_lstm_tensorboard/
-!ppo_multi_lstm_tensorboard/
-!ppo_multi_tensorboard/
-!ppo_trading_tensorboard/
+# But include all files in the root directory
+!/*.*
 
-# Ignore these specific folders everywhere
-agents/
-env/
-utils/
+# Include these folders and their contents
+!agents/
+!env/
+!utils/
+
+# Still ignore Python cache, system files, and virtual environments everywhere
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.ipynb_checkpoints
+.python-version
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.vscode/
+.env
+venv/
+ENV/
+env.bak/
+venv.bak/
+.DS_Store
 
 # Do not ignore .gitignore and README.md themselves
 !.gitignore
 !README.md
-
-# MacOS
-.DS_Store
