@@ -4,10 +4,16 @@
 # Include all files in the root directory
 !/*.*
 
-# Include these folders and their contents
+# Keep these directories and all their contents
 !agents/
+!agents/**
+
 !env/
+!env/**
+
 !utils/
+!utils/**
+
 
 # Ignore the models folder and its contents
 models/
