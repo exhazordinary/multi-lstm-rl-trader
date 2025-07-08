@@ -1,83 +1,22 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Ignore all files and folders in the root directory
+/*
 
-# C extensions
-*.so
+# But do not ignore these folders (whitelist them)
+!data/
+!models/
+!ppo_lstm_tensorboard/
+!ppo_multi_lstm_tensorboard/
+!ppo_multi_tensorboard/
+!ppo_trading_tensorboard/
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# VSCode
-.vscode/
-
-# Data files
-data/
-*.csv
-
-# Model files
-models/
-*.zip
-
-# TensorBoard logs
-ppo_lstm_tensorboard/
-ppo_multi_lstm_tensorboard/
-ppo_multi_tensorboard/
-ppo_trading_tensorboard/
-
-# Environment files
-.env
-venv/
-ENV/
+# Ignore these specific folders everywhere
+agents/
 env/
-env.bak/
-venv.bak/
+utils/
+
+# Do not ignore .gitignore and README.md themselves
+!.gitignore
+!README.md
 
 # MacOS
 .DS_Store
