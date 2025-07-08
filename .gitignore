@@ -1,13 +1,16 @@
-# Ignore everything
+# Ignore everything by default
 /*
 
-# But include all files in the root directory
+# Include all files in the root directory
 !/*.*
 
 # Include these folders and their contents
 !agents/
 !env/
 !utils/
+
+# Ignore the models folder and its contents
+models/
 
 # Still ignore Python cache, system files, and virtual environments everywhere
 __pycache__/
